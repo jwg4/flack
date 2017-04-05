@@ -1,11 +1,5 @@
-# Flask At Scale Tutorial at PyCon 2016
-
-This repository contains the companion code to my PyCon 2016 "Flask At Scale"
-class.
-
-**IMPORTANT NOTE**: The initial commit in this repository has a version of
-this application that has a few scalability problems discussed during class.
-These problems are addressed in subsequent commits.
+# Flask testing
+Miguel Grinberg's 'flack' project is used as a test case for running test automation against a flask application.
 
 ## Installation
 
