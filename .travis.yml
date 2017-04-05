@@ -10,4 +10,4 @@ python:
   - "pypy3"
 
 script:
-  - flake8
+  - flake8 .
