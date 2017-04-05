@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 import eventlet
-eventlet.monkey_patch()
+eventlet.monkey_patch()  # noqa
 
 from flask_script import Manager, Command, Server as _Server, Option
 
