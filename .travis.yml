@@ -9,6 +9,12 @@ python:
   - 'pypy-5.3.1' # Other versions of pypy are available: see https://github.com/travis-ci/travis-ci/issues/4756
   - 'pypy-5.4'
   - 'pypy-5.4.1'
+env:
+  - REQUIREMENTS=requirements.txt
+  - REQUIREMENTS=alt_requirements.txt
+  
+install:
+  - pip install -r $REQUIREMENTS
   
 script:
   - flake8 .
