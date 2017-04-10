@@ -12,6 +12,8 @@ python:
 env:
   - REQUIREMENTS=requirements.txt
   - REQUIREMENTS=alt_requirements.txt
+  - REQUIREMENTS=requirements/gevent_only.txt
+  - REQUIREMENTS=requirements/eventlet_only.txt
   
 install:
   - pip install -r $REQUIREMENTS
