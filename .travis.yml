@@ -15,7 +15,12 @@ env:
   - REQUIREMENTS=requirements/gevent_only.txt
   - REQUIREMENTS=requirements/eventlet_only.txt
   - REQUIREMENTS=requirements/uwsgi_requirements.txt
-  
+
+matrix:
+  allow_failures:
+    - env: REQUIREMENTS=requirements/uwsgi_requirements.txt
+      python: nightly
+
 install:
   - pip install -r $REQUIREMENTS
   
