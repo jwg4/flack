@@ -10,8 +10,8 @@ python:
   - 'pypy-5.4'
   - 'pypy-5.4.1'
 env:
-  - REQUIREMENTS=requirements.txt
-  - REQUIREMENTS=alt_requirements.txt
+  - REQUIREMENTS=requirements/basic_requirements.txt
+  - REQUIREMENTS=requirements/alt_requirements.txt
   - REQUIREMENTS=requirements/gevent_only.txt
   - REQUIREMENTS=requirements/eventlet_only.txt
   - REQUIREMENTS=requirements/uwsgi_requirements.txt
