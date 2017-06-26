@@ -14,6 +14,7 @@ env:
   - REQUIREMENTS=alt_requirements.txt
   - REQUIREMENTS=requirements/gevent_only.txt
   - REQUIREMENTS=requirements/eventlet_only.txt
+  - REQUIREMENTS=requirements/uwsgi_requirements.txt
   
 install:
   - pip install -r $REQUIREMENTS
