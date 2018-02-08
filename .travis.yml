@@ -18,8 +18,7 @@ env:
 
 matrix:
   allow_failures:
-    - env: REQUIREMENTS=requirements/uwsgi_requirements.txt
-      python: nightly
+    - python: nightly
 
 install:
   - pip install -r $REQUIREMENTS
