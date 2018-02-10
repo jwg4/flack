@@ -10,18 +10,20 @@ python:
   - 'pypy-5.4'
   - 'pypy-5.4.1'
 env:
-  - REQUIREMENTS=requirements/basic_requirements.txt
-  - REQUIREMENTS=requirements/alt_requirements.txt
-  - REQUIREMENTS=requirements/gevent_only.txt
-  - REQUIREMENTS=requirements/eventlet_only.txt
-  - REQUIREMENTS=requirements/uwsgi_requirements.txt
+  - REQUIREMENTS=requirements/basic_requirements
+  - REQUIREMENTS=requirements/alt_requirements
+  - REQUIREMENTS=requirements/gevent_only
+  - REQUIREMENTS=requirements/eventlet_only
+  - REQUIREMENTS=requirements/uwsgi_requirements
 
 matrix:
   allow_failures:
     - python: nightly
 
 install:
-  - pip install -r $REQUIREMENTS
+  - pip install pip-tools
+  - pip-compile ${REQUIREMENTS}.in > ${REQUIREMENTS}.txt
+  - pip install -r $REQUIREMENTS.txt
   
 script:
   - flake8 .
