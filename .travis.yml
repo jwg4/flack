@@ -6,6 +6,7 @@ python:
   - "3.5"
   - "3.6"
   - "nightly"
+  - 'pypy'
   - 'pypy-5.3.1' # Other versions of pypy are available: see https://github.com/travis-ci/travis-ci/issues/4756
   - 'pypy-5.4'
   - 'pypy-5.4.1'
@@ -19,6 +20,7 @@ env:
 matrix:
   allow_failures:
     - python: nightly
+    - python: pypy-5.3.1
 
 install:
   - pip install pip-tools
