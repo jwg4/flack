@@ -3,7 +3,7 @@ import subprocess
 import time
 
 
-def start_gunicorn()
+def start_gunicorn():
     args = ["gunicorn", "wsgi.app"]
     p = subprocess.Popen(args=args, pwd="flack")
     time.sleep(5)
