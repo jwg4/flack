@@ -10,7 +10,7 @@ env:
   - REQUIREMENTS=requirements/eventlet_only SERVER=eventlet
   - REQUIREMENTS=requirements/uwsgi_requirements SERVER=uwsgi
 
-matrix:
+jobs:
   include:
     - if: branch = master
       - python: "3.3"
