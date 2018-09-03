@@ -9,15 +9,15 @@ env:
 jobs:
   include:
     - stage: main_version_testing
-      python:
-        matrix:
+      matrix:
+        python:
           - "2.7"
           - "3.6"
           - 'pypy'
     - stage: full_version_testing
       if: branch = master
-      python:
-        matrix:
+      matrix:
+        python:
           - "3.3"
           - "3.4"
           - "nightly"
